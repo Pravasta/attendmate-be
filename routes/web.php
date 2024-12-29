@@ -5,6 +5,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware([Authenticate::class])->group(function () {
     Route::get('/', function () {
-        return redirect('/login'); // Langsung arahkan ke Filament
+        return redirect('/admin/login'); // Langsung arahkan ke Filament
     });
 });
